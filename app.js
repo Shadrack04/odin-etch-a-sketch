@@ -6,9 +6,11 @@ let numberOfGrid;
 popUpBtn.addEventListener('click', () => {
   numberOfGrid = prompt('Enter a number between 2 and 100');
   createGrid(numberOfGrid)
+  return;
 })
 
 function createGrid(num) {
+  content.textContent = '';
   for(let i = 1; i<=num*num; i++) {
     const gridDiv = document.createElement('div');
     gridDiv.classList.add('gridDiv');
