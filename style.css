@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.content {
+  height: 20rem;
+  width: 20rem;
+  
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.gridDiv {
+  background-color: white;
+  /* height: calc(100% / 16);
+  width: calc(100% / 16); */
+  border-radius: 2px;
+  border: 1px solid black;
+}
+
+.gridDiv-1 {
+  background-color: blue;
+}
