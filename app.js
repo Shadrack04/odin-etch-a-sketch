@@ -5,6 +5,9 @@ let numberOfGrid;
 
 popUpBtn.addEventListener('click', () => {
   numberOfGrid = prompt('Enter a number between 2 and 100');
+  if(numberOfGrid > 100) {
+    numberOfGrid = prompt('Must be between 2 and 100');
+  }
   createGrid(numberOfGrid)
   return;
 })
