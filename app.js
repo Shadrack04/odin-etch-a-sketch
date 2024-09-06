@@ -20,9 +20,20 @@ function createGrid(num) {
     gridDiv.classList.add(`gridDiv-${i}`);
     gridDiv.style.height = `calc(100%/${num})`; 
     gridDiv.style.width = `calc(100%/${num})`;
-  
+
+
     content.appendChild(gridDiv);
+    const boxes = document.querySelectorAll('.content div');
+    addHover(boxes);
   }
 
+}
+
+function addHover(div) {
+  div.forEach(grid => {
+    grid.addEventListener('click', ()=> {
+      grid.style.backgroundColor = 'black';
+    })
+  })
 }
 

@@ -33,9 +33,7 @@ body {
   border: 1px solid black;
 }
 
-.gridDiv-1 {
-  background-color: blue;
-}
+
 
 @media (max-width: 700px) {
   .content {
